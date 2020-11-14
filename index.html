@@ -67,53 +67,51 @@
           <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <form class="form ">
+
+              <form class="form">
                 <h2 class="form-title">
                   Оставьте свои данные, мы вам перезвоним
                 </h2>
-                <div class="form-field">
-                  <label class="form-label" for="name">Имя</label>
-                  <div class="modal-form">
-                    <input class="form-input" type="text" name="name" id="name">
+
+                <label class="form-field">
+                  <span class="form-label">Имя</span>
+                    <input class="form-input" type="text" name="name">
                     <svg class="form-svg">
                       <use href="./images/sprite.svg#person"></use>
                     </svg>
-                  </div>
-                </div>
-                <div class="form-field">
-                  <label class="form-label" for="tel">Телефон</label>
-                  <div class="modal-form">
-                    <input class="form-input" type="tel" name="tel" id="tel">
+                </label>
+
+                <label class="form-field">
+                  <span class="form-label">Телефон</span>
+                    <input class="form-input" type="tel" name="tel">
                     <svg class="form-svg">
                       <use href="./images/sprite.svg#phone"></use>
                     </svg>
-                  </div>
-                </div>
-                <div class="form-field">
-                  <label class="form-label" for="mail">Почта</label>
-                  <div class="modal-form">
-                    <input class="form-input" type="email" name="mail" id="mail">
+                </label>
+
+                <label class="form-field">
+                  <span class="form-label">Почта</span>     
+                    <input class="form-input" type="email" name="mail">
                     <svg class="form-svg">
                       <use href="./images/sprite.svg#mail"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="field-text">
-                  <label for="comment">Комментарий</label>
-                  <div class="form-text">
-                    <textarea class="text-area" name="comment" id="comment" placeholder="Введите текст " rows="10"></textarea>
-                  </div>
-                </div>
-                <div class="agreement">
-                  <input class="agreement-input visually-hidden" type="checkbox" name="agreement" value="agree-with-rules"
-                    id="agreement">
-                  <label class="agreement-label" for="agreement">
+                    </svg>                 
+                </label>
+
+                    <label class="field-text">
+                      <span class="text-label">Комментарий</span> 
+                    <textarea class="text-area" name="comment"  placeholder="Введите текст " rows="10"></textarea>                 
+                  </label>
+
+                  <label class="agreement-label">
+                  <input class="checkbox visually-hidden" type="checkbox" name="agreement" value="agree-with-rules">
+                  <span class="agreement-icon"></span>
                     <span>
                       Соглашаюсь с рассылкой и принимаю
-                      <a href="#"> Условия договора </a></span></label>
-                </div>
+                      <a href="#" class="agreement-link"> Условия договора </a></span>
+                    </label>
                 <button class="form-button" type="submit">Отправить</button>
               </form>
+
               <button type="button" class="close-button" data-modal-close>
                                     <svg class="close-plus">
                                       <use href="./images/sprite.svg#close-black"></use>
