@@ -34,14 +34,14 @@ body {
 }
 
 .visually-hidden {
-  position: absolute !important;
+  position: absolute;
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
   overflow: hidden;
 }
 
@@ -1120,15 +1120,25 @@ body {
 }
 
 /* ------------------Subscription Form------------------ */
-.subscription {
+.subscription-form {
   margin-left: 93px;
-  padding-top: 12px;
-  width: 570px;
+  padding-top: 20px;
+
+  display: flex;
   align-items: center;
+
+  width: 570px;
+}
+
+.subscription-label {
+  position: relative;
+  display: flex;
 }
 
 .subscription-title {
-  margin-bottom: 20px;
+  position: absolute;
+  display: flex;
+  top: -65%;
 
   font-weight: 700;
   font-size: 14px;
@@ -1136,16 +1146,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.subscription-box {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-}
-
-.subscription-form {
-  display: flex;
 }
 
 .subscription-input {
